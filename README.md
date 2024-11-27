@@ -55,5 +55,36 @@ Explain how to set up the project locally.
 
 1. Clone the repository:
    ```bash
-  
-   cd fitness-manager
+  https://github.com/vrindavnair/FitnessManagementSystem.git
+   cd FitnessManageMentSystem
+
+   cd FitnessBackend
+   npm install
+   cd  FitnessFrontend
+   npm install
+   
+
+PORT=5000
+Mongo_URL="mongodb://localhost:27017/FitnessManageMentSystem"
+JWT_SECRET='your-very-secure-secret'
+
+## Backend Start
+cd Fitnessbackend
+node server
+
+## Frontend Start
+cd FitnessFrontend
+npm run dev
+
+## For Admins
+Log in to the admin dashboard to manage users and classes.
+## For Coaches
+Log in to see assigned classes and member progress.
+## For Clients
+Log in to enroll in classes and view fitness progress.
+
+## Technologies Used
+Frontend: React.js, Tailwind CSS
+Backend: Node.js, Express.js
+Database: MongoDB 
+Authentication: JWT
